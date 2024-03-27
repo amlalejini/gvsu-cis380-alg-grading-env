@@ -11,5 +11,11 @@ The environment image should be available on dockerhub @ `amlalejini/gvsu-cis380
 In the root of this repository:
 
 ```
-docker build .
+docker image build ./ -t amlalejini/gvsu-cis380-alg-env:vX
+```
+
+To run interactively
+
+```
+docker run -it --entrypoint bash amlalejini/gvsu-cis380-alg-env:vX
 ```
